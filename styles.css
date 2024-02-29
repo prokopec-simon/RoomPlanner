@@ -63,12 +63,12 @@ body {
 .item {
   position: absolute;
   background-color: lightgray;
-  border: 1px solid #000;
+  border: 1px solid #afafaf;
   display: flex;
   align-items: center;
   justify-content: center;
   color: black;
-  font-weight: bold;
+  font-size: small;
 }
 
 .window {
@@ -77,13 +77,4 @@ body {
 
 .door {
   border-color: brown;
-}
-
-#room-container .item {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: black;
-  font-weight: bold;
 }

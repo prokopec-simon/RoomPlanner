@@ -4,22 +4,22 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+  background-color: #fff6f6;
 }
 
 #layout-wrapper {
   display: grid;
-  grid-template-rows: 1fr 1fr; /* Two rows of equal height */
-  gap: 20px;
+  grid-template-rows: 1fr 1fr;
   width: 80%;
-  height: 100%; /* Ensure the layout takes up the full height */
+  height: 100%; 
   margin-top: 2%;
-  padding-bottom: 200px;
+  padding-bottom: 10px;
 }
 
 #room-container {
   grid-row: 1;
   position: relative;
-  height: 100%; /* Ensure the room container takes up the full height */
+  height: 100%;
 }
 
 #json-input {
@@ -32,16 +32,32 @@ body {
 
 #room {
   border: 1px solid #000;
-  height: 100%; /* Ensure the room takes up the full height */
+  height: 100%;
 }
 
 #json-loader {
   resize: none;
   width: 100%;
+  background-color: #f8e8e8;
+  border-color:#bfa6a6;
+  border-radius: 10px;
 }
 
 #load-button {
   width: 100%;
+  line-height: 50px;
+  background-color: #fff6f6;
+  border-color:#bfa6a6;
+  border-radius: 10px;
+  font-size: large;
+  position: sticky;
+  bottom: 0;
+  cursor: pointer;
+}
+
+#load-button:hover {
+  background-color: #f8e8e8;
+  transition: background-color 100ms linear;
 }
 
 .item {
@@ -55,18 +71,16 @@ body {
   font-weight: bold;
 }
 
-.feature {
+.window {
   border-color: lightblue;
 }
 
-#door {
+.door {
   border-color: brown;
 }
 
 #room-container .item {
   position: absolute;
-  background-color: lightgray;
-  border: 1px solid #000;
   display: flex;
   align-items: center;
   justify-content: center;
